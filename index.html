@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need or Want?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Need or Want?</h1>
+        <p>Drag each item into the correct category!</p>
+        <div class="game-area">
+            <div id="items-container" class="items-container"></div>
+            <div class="categories">
+                <div id="need" class="drop-zone" ondragover="allowDrop(event)" ondrop="drop(event, 'need')">Needs</div>
+                <div id="want" class="drop-zone" ondragover="allowDrop(event)" ondrop="drop(event, 'want')">Wants</div>
+            </div>
+        </div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
